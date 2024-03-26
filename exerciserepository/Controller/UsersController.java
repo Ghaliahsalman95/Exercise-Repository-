@@ -20,7 +20,7 @@ public class UsersController {
     private final UserService userService;
 
     @GetMapping("/get-all-users")
-    public ResponseEntity getuserService() {
+    public ResponseEntity getusers() {
         return ResponseEntity.status(HttpStatus.OK).body(userService.getall());
     }
     @PostMapping("/add-user")
